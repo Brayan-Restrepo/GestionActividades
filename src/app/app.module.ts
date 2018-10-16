@@ -13,6 +13,7 @@ import { NavbarComponent } from './components/user/shared/navbar/navbar.componen
 import { PublicComponent } from './components/user/views/public/public.component';
 import { ApiService } from './services/api.service';
 import { PublicService } from './services/public/public.service';
+import { EstadoPipe } from './pipes/estado.pipe';
 
 const APP_SERVICES = [ApiService, PublicService];
 
@@ -21,7 +22,8 @@ const APP_SERVICES = [ApiService, PublicService];
     AppComponent,
     ActividadesComponent,
     NavbarComponent,
-    PublicComponent
+    PublicComponent,
+    EstadoPipe
   ],
   imports: [
     BrowserModule,
